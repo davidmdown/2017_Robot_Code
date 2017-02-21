@@ -47,7 +47,7 @@ class Rotate(Command):
         leftDist = subsystems.drivetrain.backLeft.getDistance()
         rightDist = subsystems.drivetrain.backRight.getDistance()
         circ = robotmap.auto.wheelBaseDiameter * math.pi
-        avgDeg = (((leftDist / circ) * 360) + ((rightDist / circ) * 360)) / 2
+        avgDeg = (((leftDist / circ) * 360) - ((rightDist / circ) * 360)) / 2
         
         if self.degrees <= 0:
             if avgDeg <= self.degrees:
