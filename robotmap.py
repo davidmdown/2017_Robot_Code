@@ -70,4 +70,5 @@ negative rotate speed turns the robot counter clockwise'''
 
 auto_camera.average_speed = -0.2
 auto_camera.rotate_speed = -0.1
+auto_camera.initialDriveCenter = -80.0
 
