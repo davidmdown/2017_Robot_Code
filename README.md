@@ -49,3 +49,10 @@ Added autonomous_camera.py
     added to the command group in autonomous_camera are identical to the last three commands 
     in the command group of autonomous. They command the gear housing to open, wait for it to
     open, and then move the robot back.
+    
+Added camera.py
+
+ - This is code for the child process launched in robot.py that acquires images from the Axis
+   camera and processes them to find the vision targets, find their centroids, find the midpoint
+   between their centroids, put the x and y coordinates (in the variables x_peg and y_peg into
+   the network tables so that they can be accessed by the command RotateWhileMoving
